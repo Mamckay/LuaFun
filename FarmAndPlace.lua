@@ -4,8 +4,10 @@ function detectTreeSapling()
         if success then
             if data.name == "minecraft:oak_sapling" then
                 print("sapling detected")
-            else if data.name == "minecraft:oak_log" then
+            end 
+            if data.name == "minecraft:oak_log" then
                 print("log detected")
+                turtle.dig()
             else    
                 print("something else detected")
             end
