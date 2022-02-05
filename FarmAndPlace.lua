@@ -1,3 +1,11 @@
+function pollForTreeSapling()
+    while not turtle.detect() do
+        turtle.place()
+        print("placing sapling")
+    end
+    detectTreeSapling()
+end
+
 function detectTreeSapling()
     while turtle.detect() do
         local success, data = turtle.inspect()
@@ -13,6 +21,7 @@ function detectTreeSapling()
             end
         end
     end
+    pollForTreeSapling()
 end
 
 detectTreeSapling()
