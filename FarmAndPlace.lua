@@ -24,4 +24,4 @@ function detectTreeSapling()
     pollForTreeSapling()
 end
 
-detectTreeSapling()
+pollForTreeSapling()
