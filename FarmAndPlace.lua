@@ -16,7 +16,7 @@ function detectTreeSapling()
     while turtle.detect() do
         local success, data = turtle.inspect()
         if success then
-            if data.name != "minecraft:oak_sapling" then
+            if data.name !== "minecraft:oak_sapling" then
                 turtle.place()
                 print("placing sapling")
             end
