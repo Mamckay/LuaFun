@@ -1,5 +1,6 @@
 function detectWood()
     while turtle.detect() do
+        turtle.dig()
         print("wood detected")
     end
     pollForWood()
