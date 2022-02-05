@@ -4,10 +4,8 @@ function detectTreeSapling()
         if success then
             if data.name == "minecraft:oak_sapling" then
                 print("sapling detected")
-            end
-            elseif data.name == "minecraft:oak_log" then
+            else if data.name == "minecraft:oak_log" then
                 print("log detected")
-            end
             else    
                 print("something else detected")
             end
